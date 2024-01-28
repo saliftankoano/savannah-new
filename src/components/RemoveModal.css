@@ -1,0 +1,10 @@
+#modal-header {
+  display: flex;
+  justify-content: center;
+}
+
+#modal-title {
+  font-family: robotto;
+  font-size: 2rem;
+  margin-left: auto;
+}

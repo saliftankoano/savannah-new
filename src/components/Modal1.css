@@ -1,0 +1,17 @@
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom 0.75s ease-in-out;
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+
+#modal-depts {
+  width: 100%;
+  margin-bottom: 2vh;
+  padding: 16px 12px;
+}
+
+.btn {
+  margin: 0;
+}

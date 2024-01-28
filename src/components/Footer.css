@@ -1,0 +1,15 @@
+.footer {
+  color: white;
+  background-color: #0a2351;
+  height: 10vh;
+  width: 100%;
+  margin-top: 7vh;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5%;
+}

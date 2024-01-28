@@ -1,0 +1,10 @@
+#lost {
+  background-image: url("./assets/lost.png");
+  background-size: cover;
+  height: 100vh;
+}
+#lost-txt {
+  color: white;
+  font-family: "Eczar";
+  padding: 10vh;
+}

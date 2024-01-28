@@ -1,0 +1,13 @@
+#login-error {
+  background-color: crimson;
+}
+#dialog-login-error {
+  width: 100%;
+  height: 100%;
+}
+#login-e-title {
+  color: red;
+}
+#modal-message {
+  color: red;
+}

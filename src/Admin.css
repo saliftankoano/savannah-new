@@ -1,0 +1,62 @@
+.admin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/admin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-container {
+  min-width: 30vw;
+  height: 37.3vh;
+  margin-top: 4.9%;
+}
+
+#sv-logo {
+  height: 30%;
+  width: 35%;
+}
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#username-input,
+#password-input {
+  background: rgba(255, 255, 255, 0.652);
+  border: none;
+  color: black;
+  text-align: center;
+  font-family: robotto;
+  font-size: 20px;
+  width: 35%;
+  height: 4vh;
+  margin-left: 32.5%;
+}
+#password-input {
+  margin-top: 2%;
+}
+#submit-login {
+  border-radius: 50px;
+  text-align: center;
+  font-family: robotto;
+  font-size: 20px;
+  width: 20%;
+  margin: 0 40%;
+  margin-top: 5%;
+  background-color: #b6922ee3;
+}
+
+#submit-login:hover {
+  transition: all 0.1s ease-in-out;
+  scale: 0.9;
+}
+
+#error-popup {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  z-index: 1;
+}

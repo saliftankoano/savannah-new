@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.dashboard {
+  margin: 0;
+  padding: 0;
+  height: 120vh;
+  background-image: url("./assets/admin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo-dash {
+  display: flex;
+  align-items: center;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  height: 20vh;
+}
+.dash-tip {
+  font-family: robotto;
+  color: rgba(255, 255, 255, 0.859);
+}

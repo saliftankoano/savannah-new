@@ -1,0 +1,124 @@
+* {
+  font-family: robotto;
+  font-size: 22px;
+}
+
+.option {
+  font-size: 1.5rem;
+}
+.search-bx {
+  background-color: hsl(219, 78%, 18%);
+  border-radius: 50px;
+  padding: 5% 0%;
+  height: 10vh;
+}
+.triangle-box {
+  visibility: visible;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #0a2351;
+  width: 0px;
+  height: 3vh;
+}
+
+#keyword-in {
+  height: 7vh;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 20px;
+  color: #b6922e;
+  width: 50%;
+}
+#depts-in {
+  height: 7vh;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 20px;
+  color: #b6922e;
+  width: 50%;
+}
+
+#submit-search-in {
+  height: 7vh;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 20px;
+  color: white;
+  background-color: #b6922e;
+  width: 33%;
+}
+#submit-search-in:hover {
+  transition: all 0.1s ease-in-out;
+  scale: 0.9;
+}
+@media only screen and (max-width: 576px) {
+  .search-bx {
+    background-color: hsl(219, 78%, 18%);
+    border-radius: 20px;
+    padding: 0;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .search-bx {
+    background-color: hsl(219, 78%, 18%);
+    border-radius: 45px;
+    padding: 0;
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .search-bx {
+    height: 30vh;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+/* GRID STYLE */
+.ag-theme-savannah {
+  height: 75vh;
+}
+.ag-theme-quartz-dark .ag-root {
+  --ag-foreground-color: rgb(238, 0, 255);
+  --ag-background-color: hsl(219, 78%, 18%);
+  --ag-header-foreground-color: white;
+  --ag-header-background-color: #b6922e;
+  --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+  --ag-header-column-resize-handle-color: white;
+
+  --ag-font-size: 17px;
+  --ag-font-family: monospace;
+}
+.ag-theme-quartz-dark .ag-body {
+  background-color: hsl(219, 78%, 18%);
+}
+th {
+  border: white solid 2px;
+  padding: 0 0.5rem;
+}
+td {
+  text-align: center;
+}
+#title {
+  font-size: 2rem;
+  margin: 1vh 0;
+}
+.search-tip {
+  font-size: 1.6rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 575px) {
+  .option {
+    font-size: 1rem;
+  }
+}
