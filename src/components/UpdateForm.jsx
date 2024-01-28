@@ -16,7 +16,9 @@ export default function UpdateForm({ onSubmit }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5172/depts");
+        const response = await fetch(
+          "https://savannah-uv-server.onrender.com/depts"
+        );
         const departmentObjects = await response.json();
         // console.log(departmentObjects);
         let departmentNames = [];

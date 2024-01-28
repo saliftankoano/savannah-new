@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function getAllDepts() {
-  const response = await fetch("http://localhost:5172/depts");
+  const response = await fetch("https://savannah-uv-server.onrender.com/depts");
   const depts = await response.json();
 
   let finalResults = [];

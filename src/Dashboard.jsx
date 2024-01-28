@@ -38,11 +38,17 @@ export default function Dashboard() {
   ]);
   async function getAllEmployees() {
     let allEmployees;
-    let responseFac = await fetch(`http://localhost:5172/faculty`);
+    let responseFac = await fetch(
+      `https://savannah-uv-server.onrender.com/faculty`
+    );
     responseFac = await responseFac.json();
-    let responseStaff = await fetch(`http://localhost:5172/staff`);
+    let responseStaff = await fetch(
+      `https://savannah-uv-server.onrender.com/staff`
+    );
     responseStaff = await responseStaff.json();
-    let responseDepts = await fetch(`http://localhost:5172/depts`);
+    let responseDepts = await fetch(
+      `https://savannah-uv-server.onrender.com/depts`
+    );
     responseDepts = await responseDepts.json();
     allEmployees = [...responseFac, ...responseStaff, ...responseDepts];
     setRowData(allEmployees);
