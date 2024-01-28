@@ -20,31 +20,31 @@ import TestArea from "./TestArea.jsx";
 import Lost from "./Lost.jsx";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://savannah-uv.onrender.com",
     element: <App />,
   },
   {
-    path: "/about",
+    path: "https://savannah-uv.onrender.com/about",
     element: <About />,
   },
   {
-    path: "/admissions",
+    path: "https://savannah-uv.onrender.com/admissions",
     element: <Admissions />,
   },
   {
-    path: "/admin",
+    path: "https://savannah-uv.onrender.com/admin",
     element: <Admin />,
   },
   {
-    path: "/dashboard",
+    path: "https://savannah-uv.onrender.com/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "/lost",
+    path: "https://savannah-uv.onrender.com/lost",
     element: <Lost />,
   },
   {
-    path: "/test",
+    path: "https://savannah-uv.onrender.com/test",
     element: <TestArea />,
   },
 ]);
