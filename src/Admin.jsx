@@ -23,7 +23,7 @@ export default function Admin() {
     let response;
     try {
       response = await fetch(
-        `http://localhost:5172/admin/${username}&${password}`
+        ` https://savannah-uv-server.onrender.com/admin/${username}&${password}`
       );
       response = await response.json();
     } catch (error) {

@@ -19,20 +19,23 @@ export default function AddModal() {
   async function addEntity(values) {
     let responseJson;
     try {
-      const response = await fetch(`http://localhost:5172/${values.entity}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: values.fullName,
-          phone: values.phone,
-          extension: values.extension,
-          email: values.email,
-          location: values.location,
-          department: values.dept,
-        }),
-      });
+      const response = await fetch(
+        `https://savannah-uv-server.onrender.com/${values.entity}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: values.fullName,
+            phone: values.phone,
+            extension: values.extension,
+            email: values.email,
+            location: values.location,
+            department: values.dept,
+          }),
+        }
+      );
       responseJson = await response.json();
     } catch (error) {
       alert(error);
@@ -41,15 +44,15 @@ export default function AddModal() {
       let refetchEntity;
       if (values.entity === "faculty") {
         refetchEntity = await fetch(
-          `http://localhost:5172/faculty/${values.fullName}`
+          `https://savannah-uv-server.onrender.com/faculty/${values.fullName}`
         );
       } else if (values.entity === "staff") {
         refetchEntity = await fetch(
-          `http://localhost:5172/staff/${values.fullName}`
+          `https://savannah-uv-server.onrender.com/staff/${values.fullName}`
         );
       } else {
         refetchEntity = await fetch(
-          `http://localhost:5172/department/${values.fullName}`
+          `https://savannah-uv-server.onrender.com/department/${values.fullName}`
         );
       }
 

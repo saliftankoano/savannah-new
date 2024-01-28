@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function getAllDepts() {
-  const response = await fetch("http://localhost:5172/depts");
+  const response = await fetch("https://savannah-uv-server.onrender.com/depts");
   const depts = await response.json();
 
   let finalResults = [];
@@ -52,7 +52,9 @@ function SearchBlock() {
   useEffect(() => {}, [rowData]);
 
   async function getAllFaculty() {
-    const response = await fetch(`http://localhost:5172/faculty`);
+    const response = await fetch(
+      `https://savannah-uv-server.onrender.com/faculty`
+    );
     results = await response.json();
     setRowData(results);
   }
@@ -94,7 +96,7 @@ function SearchBlock() {
   }
   async function specificFaculty(specificFaculty) {
     const response = await fetch(
-      `http://localhost:5172/faculty/${specificFaculty}`
+      `https://savannah-uv-server.onrender.com/faculty/${specificFaculty}`
     );
     const faculty = await response.json();
     delete faculty.id;
@@ -102,7 +104,7 @@ function SearchBlock() {
   }
   async function specificStaff(specificStaff) {
     const response = await fetch(
-      `http://localhost:5172/staff/${specificStaff}`
+      `https://savannah-uv-server.onrender.com/staff/${specificStaff}`
     );
     const staff = await response.json();
     delete staff.id;
@@ -110,7 +112,7 @@ function SearchBlock() {
   }
   async function specificDept(specificDept) {
     const response = await fetch(
-      `http://localhost:5172/department/${specificDept}`
+      `https://savannah-uv-server.onrender.com/department/${specificDept}`
     );
     const dept = await response.json();
     delete dept.id;

@@ -16,7 +16,7 @@ export default function UpdateModal() {
     let responseJson;
     try {
       const fetchedEntity = await fetch(
-        `http://localhost:5172/entity/${values.id}/${values.entity}`
+        `https://savannah-uv-server.onrender.com/entity/${values.id}/${values.entity}`
       );
       entityResponse = await fetchedEntity.json();
       // console.log(entityResponse);
@@ -32,7 +32,7 @@ export default function UpdateModal() {
         return;
       } else {
         const response = await fetch(
-          `http://localhost:5172/update/${values.id}`,
+          `https://savannah-uv-server.onrender.com/update/${values.id}`,
           {
             method: "PUT",
             headers: {
@@ -52,7 +52,7 @@ export default function UpdateModal() {
         responseJson = await response.json();
         //Refetch the updated info
         const refetchEntity = await fetch(
-          `http://localhost:5172/entity/${values.id}/${values.entity}`
+          `https://savannah-uv-server.onrender.com/entity/${values.id}/${values.entity}`
         );
         const refetchResp = await refetchEntity.json();
         // console.log(refetchResp);

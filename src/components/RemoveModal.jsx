@@ -24,7 +24,7 @@ export default function RemoveModal() {
 
     try {
       const fetchedEntity = await fetch(
-        `http://localhost:5172/entity/${values.id}/${values.entity}`
+        `https://savannah-uv-server.onrender.com/entity/${values.id}/${values.entity}`
       );
       entityResponse = await fetchedEntity.json();
       // console.log(entityResponse);
@@ -38,7 +38,7 @@ export default function RemoveModal() {
       alert(error);
     } finally {
       const response = await fetch(
-        `http://localhost:5172/delete/${values.entity}&${values.id}`,
+        `https://savannah-uv-server.onrender.com/delete/${values.entity}&${values.id}`,
         {
           method: "DELETE",
           headers: {
