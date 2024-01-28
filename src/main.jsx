@@ -20,7 +20,7 @@ import TestArea from "./TestArea.jsx";
 import Lost from "./Lost.jsx";
 const router = createBrowserRouter([
   {
-    path: "https://savannah-uv.onrender.com",
+    path: "/",
     element: <App />,
   },
   {
