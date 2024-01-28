@@ -24,27 +24,27 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "https://savannah-uv.onrender.com/about",
+    path: "/about",
     element: <About />,
   },
   {
-    path: "https://savannah-uv.onrender.com/admissions",
+    path: "/admissions",
     element: <Admissions />,
   },
   {
-    path: "https://savannah-uv.onrender.com/admin",
+    path: "/admin",
     element: <Admin />,
   },
   {
-    path: "https://savannah-uv.onrender.com/dashboard",
+    path: "/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "https://savannah-uv.onrender.com/lost",
+    path: "/lost",
     element: <Lost />,
   },
   {
-    path: "https://savannah-uv.onrender.com/test",
+    path: "/test",
     element: <TestArea />,
   },
 ]);
