@@ -6,30 +6,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import About from "./About.jsx";
-import Admissions from "./Admissions.jsx";
 import Admin from "./Admin.jsx";
 import Dashboard from "./Dashboard.jsx";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
-import TestArea from "./TestArea.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Lost from "./Lost.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/admissions",
-    element: <Admissions />,
   },
   {
     path: "/admin",
@@ -42,10 +26,6 @@ const router = createBrowserRouter([
   {
     path: "/lost",
     element: <Lost />,
-  },
-  {
-    path: "/test",
-    element: <TestArea />,
   },
 ]);
 

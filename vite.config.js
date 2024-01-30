@@ -9,6 +9,6 @@ export default defineConfig({
     target: "es2022", // or 'esnext' if you want the latest
   },
   build: {
-    target: "esnext",
+    sourcemap: true,
   },
 });
